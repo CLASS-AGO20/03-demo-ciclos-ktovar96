@@ -59,6 +59,17 @@ export default class App {
         } while (i <= 20);
         return suma;
     }
+    contarImparesDo(inicio, fin){
+        let i= inicio;
+        let impares= 0;
+        do {
+            if (i%2 !=0){
+                impares++;
+            }
+            i++
+        }while (i<= fin)
+        return impares;
+    }
     
 }
 
@@ -68,3 +79,4 @@ console.log (app.contarImparesFor(11, 5));
 console.log (app.sumarParesWhile());
 console.log (app.contarImparesWhile(5,11));
 console.log (app.sumarParesDo());
+console.log (app.contarImparesDo(11,5));
